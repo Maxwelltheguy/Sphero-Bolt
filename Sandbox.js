@@ -18,9 +18,9 @@ await speak("Hello World", true);
 async function startProgram() {
 
 	setMainLed({ r: 255, g: 150, b: 0 });
-	await speak("Hello Square", true);
+	await speak("Hola, Como estas?", true);
 	await delay(1);
-	for (var _i1 = 0; _i1 < 4; _i1++) {
+	for (var bolt = 0; bolt < 4; bolt++) {
 		setMainLed(getRandomColor());
 		await Sound.Game.Coin.play(true);
 		await roll((getHeading() + 90), 60, 1);
