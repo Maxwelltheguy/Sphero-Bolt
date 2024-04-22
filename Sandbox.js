@@ -17,12 +17,12 @@ await speak("Hello World", true);
 
 async function startProgram() {
 
-	setMainLed({ r: 255, g: 150, b: 0 });
+	setMainLed({ r: 255, g: 180, b: 0 });
 	await speak("Hola, Como estas?", true);
 	await delay(1);
 	for (var bolt = 0; bolt < 4; bolt++) {
 		setMainLed(getRandomColor());
-		await Sound.Game.Coin.play(true);
+		await Sound.RobotTalk.Restarting.play(true);
 		await roll((getHeading() + 90), 60, 1);
 		await delay(1);
 	}
