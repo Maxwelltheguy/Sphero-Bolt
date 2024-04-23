@@ -14,16 +14,26 @@ await speak("Hello World", true);
 	setSpeed(0);
 }
 */
-
+/*
 async function startProgram() {
 
-	setMainLed({ r: 255, g: 180, b: 0 });
-	await speak("Hola, Como estas?", true);
+	setMainLed({ r: 255, g: 50, b: 0 });
+	await speak("Hippity Hoppity", true);
 	await delay(1);
 	for (var bolt = 0; bolt < 4; bolt++) {
 		setMainLed(getRandomColor());
-		await Sound.RobotTalk.Restarting.play(true);
+		await Sound.EightBit.Magic.play(true);
 		await roll((getHeading() + 90), 60, 1);
 		await delay(1);
 	}
+}
+*/
+
+
+async function startProgram() {
+	await roll((getHeading() + 90), 60, 1);
+	await delay(1);
+	await roll((getHeading() - 90), 60, 1);
+
+
 }
