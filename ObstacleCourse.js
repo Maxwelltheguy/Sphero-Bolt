@@ -14,4 +14,10 @@ async function startProgram() {
 	await delay(1);
 	setMainLed({r:10, g:100, b:115});
 	await roll((getHeading() - 20), 100, 1);
+	//Maxwell Moss - PC 7 - checkpoint 3 - green
+	await delay(1);
+	setMainLed({r:0, g:225, b:0});
+	await roll((getHeading() + 125), 150, 1);
+	await Sound.Mechanical.Hammer.play(true); 
+	await delay(1);
 }
