@@ -5,17 +5,17 @@
 //Program: Hello world - Sandbox
 //program url:https://edu.sphero.com/program/16788354/edit
 
-async function startProgram() {
-	// Programmer: Maxwell Moss - Start Text & Audio Checkpoint Commit - Date:
+// Programmer: Maxwell Moss - Start Text & Audio Checkpoint Commit - Date: 4-31-2024
 	await scrollMatrixText('Start', { r: 255, g: 255, b: 255 }, 15, true);
-	await await speak("Start", true);
+	await speak("Start", true);
 
+	// Programmer:James maher -blue led checkpoint commit - Date: 5-1-2024
+	setMainLed({r:0, g:0, b:255});
+	await roll((getHeading() + 0), 50, 3.3);
 
-	// Programmer:  - Blue LED Checkpoint Commit - Date:
-
-
-
-	// Programmer:  - Sound One Checkpoint Commit - Date:
+	// Programmer: Maxwell Moss - Sound One Checkpoint Commit - Date:
+	await delay(1);
+	await roll((getHeading() + 90), 50, 2.6);
 
 
 
