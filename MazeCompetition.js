@@ -31,7 +31,7 @@
 
 
 
-	// Programmer: Maxwell Moss - Sound Two Checkpoint Commit - Date:
+	// Programmer: Maxwell Moss - Sound Two Checkpoint Commit - Date:5-7-2024
 	await delay(1);
 	await roll((getHeading() - 90), 50, 1);
 	await delay(1);
@@ -39,7 +39,7 @@
 	await Sound.Water.BoatAngry.play(true);
 
 
-	// Programmer: james Maher - Green LED Checkpoint Commit - Date:
+	// Programmer: james Maher - Green LED Checkpoint Commit - Date:5-7-2024
 	await delay(1)
 	await roll((getHeading() + 90), 50, 1.4);
 	await delay(1)
@@ -48,14 +48,21 @@
 
 
 
-	// Programmer:  - Sound Two Checkpoint Commit - Date:
+	// Programmer: Maxwell Moss - Purple LED & Sound Three Checkpoint Commit - Date:5-7-2024
+	await delay(1);
+	await roll((getHeading() - 90), 50, 1);
+	await delay(1);
+	await roll((getHeading() - 45), 50, 1);
+	await Sound.Water.BoatAngry.play(true);
+	setMainLed({r:160, g:32, b:240});
 
 
 
-	// Programmer:  - Purple LED & Sound Three Checkpoint Commit - Date:
-
-
-
-	// Programmer: Maxwell Moss - Finish Text & Audio Checkpoint Commit - Date:	
-
+	// Programmer:James Maher - Finish Text & Audio Checkpoint Commit - Date:	
+	await delay(1);
+	await roll((getHeading() + 45), 50, 1.7);
+	await scrollMatrixText('Finish', { r: 255, g: 255, b: 255 }, 15, true);
+	await speak("Finish", true);
+	await Sound.Water.BoatAngry.play(true);
+	
 }
