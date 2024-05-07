@@ -39,7 +39,12 @@
 	await Sound.Water.BoatAngry.play(true);
 
 
-	// Programmer:  - Green LED Checkpoint Commit - Date:
+	// Programmer: james Maher - Green LED Checkpoint Commit - Date:
+	await delay(1)
+	await roll((getHeading() + 90), 50, 1.4);
+	await delay(1)
+	await roll((getHeading() -45), 50, 0.7);
+	setMainLed({r:0, g:255, b:0});
 
 
 
