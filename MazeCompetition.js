@@ -18,7 +18,7 @@
 
 	// Programmer: Maxwell Moss - Sound One Checkpoint Commit - Date:
 	await delay(1);
-	await roll((getHeading() + 90), 50, 2.6);
+	await roll((getHeading() + 90), 50, 2.4);
 	await Sound.Water.BoatAngry.play(true);
 
 
@@ -33,7 +33,7 @@
 
 	// Programmer: Maxwell Moss - Sound Two Checkpoint Commit - Date:
 	await delay(1);
-	await roll((getHeading() - 90), 50, 0.5);
+	await roll((getHeading() - 90), 50, 1);
 	await delay(1);
 	await roll((getHeading() - 90), 50, 1.5);
 	await Sound.Water.BoatAngry.play(true);
